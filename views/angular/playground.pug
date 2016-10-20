@@ -2,6 +2,7 @@ extends ../layout.pug
 block header
   h1 Angular Playground
 block body
+  ng-view
   div(ng-controller="TodoListController as vm")
     input(type="text" ng-model="toFilter")
     ul

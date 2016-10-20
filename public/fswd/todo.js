@@ -1,7 +1,15 @@
 import angular from 'angular';
 import _ from 'lodash';
+import ngRoute from 'angular-route';
 
-angular.module('fswd.todo', [])
+angular.module('fswd.todo', ['ngRoute'])
+.config(function($routeProvider){
+  $routeProvider.when('/task', {
+    controller:'TodoListController',
+    controller:'vm',
+    template: '/partials/taskList'
+  });
+})
   .service('TodoListService', function($http) {
     var todoList = ['Groceries', 'Dinner', 'Breakfast'];
 
