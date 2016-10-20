@@ -30,5 +30,22 @@ System.config({
     "npm:typescript@1.8.10": {
       "os": "github:jspm/nodelibs-os@0.1.0"
     }
+//   ()},
+// ()
+// ()  meta: {
+//     "angular-route": {
+//       "format": "cjs"
+//     }
   }
+
+  // meta: {
+  //   // "github:angular/bower-angular@1.5.8": {
+  //   //   "format": "global",
+  //   //   "exports": "angular"
+  //   // },
+  //   "github:angular/bower-angular-route@1.5.8": {
+  //     "format": "global",
+  //     "deps": [ "angular" ]
+  //   }
+  // }
 });
